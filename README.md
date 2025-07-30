@@ -59,3 +59,11 @@ resultado = (idade >= 18 || !chavesMentira) ? !resultado : !!resultado;
 System.out.println(resultado);
 ````
 *Variáveis locais devem ser inicializadas, evitando erro de compilação.*
+
+- switch: Estrutura permite visualização melhor que encadear vários "if else". Se não houver inclusão do break há execução dos todos os casos após condição.
+
+### 5. Estruturas de repetição
+
+- while(condição){}: enquanto condição for verdadeira executa bloco de código.
+- do{} while(condição): executa uma vez o bloco de código e repete laço de repetição enquanto a condição for verdadeira.
+- for(iterador, condição, ação): define um iterador, enquanto condição for verdadeira realizará a ação. Pode-se utilizar break.
