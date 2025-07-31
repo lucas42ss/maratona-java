@@ -1,4 +1,5 @@
 ## Maratona Java | DevDojo
+# Introdução Java
 ### 1. Como funciona o Java?
 - Java é muiltiplataforma e roda numa camada chamada JVM (Java Virtual Machine). É uma linguagem que é compilada, arquivos .JAVA são transformados em arquivos .class (bytecode) que são interpretados pela JVM, comunicando-se com o SO.
 ![img.png](img.png)
@@ -77,3 +78,14 @@ System.out.println(resultado);
 ### 7. Arrays Multidimensionais
 
 - Na declaração a base deve ter tamanho definido. 
+
+# Introdução JavaCore
+
+### Introdução Classes
+
+- Uma classe vai definir um conjunto de dados variados, alocados no mesmo espaço de memória, obtendo-se um objeto (variável do tipo reference). Uma classe é um agrupamento de coisas do mundo real representadas por um objeto (carro, pessoa, etc).
+- Domínio, model, domain: Classes que representam lógica de negócio.
+- Ao criarmos novo objeto sem atribuição de valores, eles tem atribuidos valores padrão.
+- Coesão é relacionada ao propósito da aglutinação dos objetos.
+
+***Classes de domínio representam algo do mundo real.***
