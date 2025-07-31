@@ -1,7 +1,7 @@
 ## Maratona Java | DevDojo
 ### 1. Como funciona o Java?
-- Java é muiltiplataforma e roda numa camada chamada JVM (Java Virtual Machine). É uma linguagem que é compilada, 
-arquivos .JAVA são transformados em arquivos .class (bytecode) que são interpretados pela JVM, comunicando-se com o SO.
+- Java é muiltiplataforma e roda numa camada chamada JVM (Java Virtual Machine). É uma linguagem que é compilada, arquivos .JAVA são transformados em arquivos .class (bytecode) que são interpretados pela JVM, comunicando-se com o SO.
+![img.png](img.png)
 - Necessitamos utilizar JDK (Java Development Kit) que é um conjunto de ferramentas para desenvolvimento de softwares em Java.
 - Exemplo de código em Java:
 
@@ -15,7 +15,7 @@ public class Aula01OlaDevDojo {
 ```
 - O uso de pacotes é interessante para organização das classes do projeto.
 ### 2. Tipos primitivos e String
-- Os tipos primitivos são: int, double, float, char, byte, short, long, boolean.
+- Os tipos primitivos são: int, double, float, char, byte, short, long, boolean. Variáveis declaradas fora do método (fora do escopo local) tem valor de inicialização.
 - Casting: posso forçar um dado dentro de uma variável maior que sua capacidade, por exemplo, um número muito grande em um short. Resultado armazenado não é previsível. Serão cortados bits.
 ```
 float número = (float)2500.80; 
@@ -66,4 +66,14 @@ System.out.println(resultado);
 
 - while(condição){}: enquanto condição for verdadeira executa bloco de código.
 - do{} while(condição): executa uma vez o bloco de código e repete laço de repetição enquanto a condição for verdadeira.
-- for(iterador, condição, ação): define um iterador, enquanto condição for verdadeira realizará a ação. Pode-se utilizar break.
+- for(iterador, condição, ação): define um iterador, enquanto condição for verdadeira realizará a ação. Pode-se utilizar break para parar iteração. Continue ignora linhas subsequentes e realiza iteração.
+
+### 6. Arrays
+
+- Alocação de dados contígua na memória. A declaração de um Array faz referência à um objeto de memória. Não podemos acessar posição que não existe no Array. Podemos iterar sobre posições do Array(indexado a partir do 0). Tamanho do Array não pode ser aumentado dinamicamente. Ao realizar nova atribuição à Array declarado (Array = new Array[]) perde-se a referência antiga da memória e é atribuída uma nova.
+
+*Variáveis de referência (Array, String) tem valor de inicialização nulo.*
+
+### 7. Arrays Multidimensionais
+
+- Na declaração a base deve ter tamanho definido. 
