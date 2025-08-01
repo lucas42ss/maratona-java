@@ -71,7 +71,7 @@ System.out.println(resultado);
 
 ### 6. Arrays
 
-- Alocação de dados contígua na memória. A declaração de um Array faz referência à um objeto de memória. Não podemos acessar posição que não existe no Array. Podemos iterar sobre posições do Array(indexado a partir do 0). Tamanho do Array não pode ser aumentado dinamicamente. Ao realizar nova atribuição à Array declarado (Array = new Array[]) perde-se a referência antiga da memória e é atribuída uma nova.
+- Alocação de dados contígua na memória. A declaração de um Array faz referência a um objeto de memória. Não podemos acessar posição que não existe no Array. Podemos iterar sobre posições do Array(indexado a partir do 0). Tamanho do Array não pode ser aumentado dinamicamente. Ao realizar nova atribuição à Array declarado (Array = new Array[]) perde-se a referência antiga da memória e é atribuída uma nova.
 
 *Variáveis de referência (Array, String) tem valor de inicialização nulo.*
 
@@ -81,11 +81,17 @@ System.out.println(resultado);
 
 # Introdução JavaCore
 
-### Introdução Classes
+### 1. Classes - Introdução
 
 - Uma classe vai definir um conjunto de dados variados, alocados no mesmo espaço de memória, obtendo-se um objeto (variável do tipo reference). Uma classe é um agrupamento de coisas do mundo real representadas por um objeto (carro, pessoa, etc).
 - Domínio, model, domain: Classes que representam lógica de negócio.
-- Ao criarmos novo objeto sem atribuição de valores, eles tem atribuidos valores padrão.
-- Coesão é relacionada ao propósito da aglutinação dos objetos.
+- Ao criarmos um novo objeto sem atribuição de valores, eles têm atribuídos valores padrão.
+- Coesão é relacionada à aglutinação de objetos numa classe por sua especificidade, visando escalabilidade.
+- Podemos mudar o apontamento das variáveis de referência. Os objetos precisam ser do mesmo tipo.
 
 ***Classes de domínio representam algo do mundo real.***
+
+### 2. Métodos - Introdução
+
+- Servem para executar alguma operação, podem ter retorno ou não(void). Também podemos usar return como um "break-point" para uma função void. 
+- Quando passamos variáveis do tipo primitivo num método, passamos uma cópia. Quando passamos objeto como argumento, passamos a sua referência na memória.
