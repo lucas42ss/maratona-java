@@ -86,7 +86,7 @@ System.out.println(resultado);
 - Uma classe vai definir um conjunto de dados variados, alocados no mesmo espaço de memória, obtendo-se um objeto (variável do tipo reference). Uma classe é um agrupamento de coisas do mundo real representadas por um objeto (carro, pessoa, etc).
 - Domínio, model, domain: Classes que representam lógica de negócio.
 - Ao criarmos um novo objeto sem atribuição de valores, eles têm atribuídos valores padrão.
-- Coesão é relacionada à aglutinação de objetos numa classe por sua especificidade, visando escalabilidade.
+- Coesão é relacionada à aglutinação de objetos por sua especificidade, visando escalabilidade, por exemplo.
 - Podemos mudar o apontamento das variáveis de referência. Os objetos precisam ser do mesmo tipo.
 
 ***Classes de domínio representam algo do mundo real.***
@@ -95,3 +95,5 @@ System.out.println(resultado);
 
 - Servem para executar alguma operação, podem ter retorno ou não(void). Também podemos usar return como um "break-point" para uma função void. 
 - Quando passamos variáveis do tipo primitivo num método, passamos uma cópia. Quando passamos objeto como argumento, passamos a sua referência na memória.
+- This faz referência ao prórpio objeto, todavia, depende do contexto.
+- var args (...): Forma de passar vários elementos de um mesmo tipo para um método, java vai transformar valores num array. VarArgs deve sempre ser o último parâmetro.

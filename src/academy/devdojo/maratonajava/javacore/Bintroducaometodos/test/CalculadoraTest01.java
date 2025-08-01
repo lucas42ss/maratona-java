@@ -15,5 +15,9 @@ public class CalculadoraTest01 {
         int num2 = 5654;
         calculadora.trocaNumero(num1, num2);
         System.out.println(num1 + " " + num2);
+        int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println(calculadora.somaArray(numeros));
+        System.out.println(calculadora.somaArrayVarArgs(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
     }
 }

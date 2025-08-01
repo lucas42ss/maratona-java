@@ -33,4 +33,18 @@ public class Calculadora {
         num2=30;
         return;
     }
+    public int somaArray(int[] numeros){
+        int soma = 0;
+        for(int num:numeros){
+            soma += num;
+        }
+        return soma;
+    }
+    public int somaArrayVarArgs(int... numeros){
+        int soma = 0;
+        for(int num:numeros){
+            soma += num;
+        }
+        return soma;
+    }
 }
