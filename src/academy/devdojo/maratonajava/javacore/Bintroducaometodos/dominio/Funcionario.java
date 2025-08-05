@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public int[] salario = {0, 0, 0};
+    private String nome;
+    private int idade;
+    private int[] salario = {0, 0, 0};
 
     public void mediaSalarial() {
         int media = 0;
@@ -27,5 +27,19 @@ public class Funcionario {
         this.salario = salario;
     }
 
-
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    public int getIdade(){
+        return this.idade;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public void setSalario(int[] salario){
+        this.salario = salario;
+    }
 }

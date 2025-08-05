@@ -9,5 +9,12 @@ public class FuncionarioTest {
         funcionario.mediaSalarial();
         funcionario.imprimeDados();
 
+        funcionario.setSalario(new int[]{350, 55777, 2});
+
+        funcionario.imprimeDados();
+        funcionario.mediaSalarial();
+
+        System.out.println(funcionario.getNome());
+
     }
 }

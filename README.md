@@ -102,4 +102,21 @@ System.out.println(resultado);
 
 - Acoplamento é "o quanto uma classe conhece da outra".
 - Modificador de acesso privado: atributos só podem ser acessados pelo objeto. Podemos criar atributos privados com métodos públicos para acessá-los, deve-se utilizar "set" para atribuir valores, por exemplo, na nomeação do método (setNome) e "get" para recuperar algum valor (getNome). 
-- 
+
+### 4. Sobrecarga de métodos
+
+- Sobrecarga é relacioana ao nome, quantidade ou tipo dos parâmetros que devem ser divergentes na realização da sobrecarga, senão haverá ambiguidade.
+
+### 5. Construtores
+
+- Construtores não têm retorno.
+- this(): Sintaxe para chamar um construtor dentro de outro, por exemplo, na adição de uma propriedade, para não mudarmos a assinatura do método, utiliza-se em outro construtor. Ele deve estar na primeira linha do construtor obrigatoriamente. Parece uma acesso recursivo ao construtor.
+
+### 6. Blocos de inicialização
+
+- {}: Também chamdo de instância. Deve ser criado antes do construtor. É executado sempre que é criada nova instância do construtor.
+
+### 7. Modificador static
+
+- Sempre inserir após modificador de acesso. Atributo pertence à classe, não ao objeto. Todos os objetos compartilham mesmo valor.
+- Um campo não estático não pode ser referenciado em um campo estático.
