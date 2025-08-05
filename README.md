@@ -17,7 +17,7 @@ public class Aula01OlaDevDojo {
 - O uso de pacotes é interessante para organização das classes do projeto.
 ### 2. Tipos primitivos e String
 - Os tipos primitivos são: int, double, float, char, byte, short, long, boolean. Variáveis declaradas fora do método (fora do escopo local) tem valor de inicialização.
-- Casting: posso forçar um dado dentro de uma variável maior que sua capacidade, por exemplo, um número muito grande em um short. Resultado armazenado não é previsível. Serão cortados bits.
+- Casting: posso forçar um dado numa variável maior que a sua capacidade, por exemplo, um número muito grande num short. Resultado armazenado não é previsível. Serão cortados bits.
 ```
 float número = (float)2500.80; 
 ```
@@ -95,5 +95,11 @@ System.out.println(resultado);
 
 - Servem para executar alguma operação, podem ter retorno ou não(void). Também podemos usar return como um "break-point" para uma função void. 
 - Quando passamos variáveis do tipo primitivo num método, passamos uma cópia. Quando passamos objeto como argumento, passamos a sua referência na memória.
-- This faz referência ao prórpio objeto, todavia, depende do contexto.
+- This faz referência ao próprio objeto, todavia, depende do contexto.
 - var args (...): Forma de passar vários elementos de um mesmo tipo para um método, java vai transformar valores num array. VarArgs deve sempre ser o último parâmetro.
+
+### 3. Modificadores de acesso
+
+- Acoplamento é "o quanto uma classe conhece da outra".
+- Modificador de acesso privado: atributos só podem ser acessados pelo objeto. Podemos criar atributos privados com métodos públicos para acessá-los, deve-se utilizar "set" para atribuir valores, por exemplo, na nomeação do método (setNome) e "get" para recuperar algum valor (getNome). 
+- 

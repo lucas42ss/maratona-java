@@ -7,6 +7,7 @@ public class FuncionarioTest {
         Funcionario funcionario = new Funcionario("Manoel", 56, new int[]{2500, 3452, 5498});
 
         funcionario.mediaSalarial();
+        funcionario.imprimeDados();
 
     }
 }
