@@ -110,13 +110,19 @@ System.out.println(resultado);
 ### 5. Construtores
 
 - Construtores não têm retorno.
-- this(): Sintaxe para chamar um construtor dentro de outro, por exemplo, na adição de uma propriedade, para não mudarmos a assinatura do método, utiliza-se em outro construtor. Ele deve estar na primeira linha do construtor obrigatoriamente. Parece uma acesso recursivo ao construtor.
+- this(): Sintaxe para chamar um construtor dentro de outro, por exemplo, na adição de uma propriedade, para não mudarmos a assinatura do método, utiliza-se em outro construtor. Ele deve estar na primeira linha do construtor obrigatoriamente. Parece um acesso recursivo ao construtor.
 
 ### 6. Blocos de inicialização
 
-- {}: Também chamdo de instância. Deve ser criado antes do construtor. É executado sempre que é criada nova instância do construtor.
+- {}: Também chamdo de instância. Deve ser criado antes do construtor. É executado sempre que é criada instância do construtor.
 
 ### 7. Modificador static
 
 - Sempre inserir após modificador de acesso. Atributo pertence à classe, não ao objeto. Todos os objetos compartilham mesmo valor.
-- Um campo não estático não pode ser referenciado em um campo estático.
+- Um campo não estático não pode ser referenciado num campo estático. Estático é criado antes do objeto ser criado.
+- Criar método estático quando métodos não acessam variável da instância.
+- Podemos declarar blocos estáticos e chamar métodos estáticos dentro deles. Eles carregam somente uma vez. Se houver mais de um bloco estático eles serão executados na ordem que foram inseridos.
+
+### 8. Associações
+
+- Relacionamento entre duas classes. Pode ser 1 - 1, 1 - n ou n - n.
