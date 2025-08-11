@@ -126,3 +126,11 @@ System.out.println(resultado);
 ### 8. Associações
 
 - Relacionamento entre duas classes. Pode ser 1 - 1, 1 - n ou n - n.
+
+### 9. Leitura de dados pelo console
+
+- Utilizamos a classe Scanner para entrada de dados no Java. System.in como argumento.
+```
+  Scanner entrada = new Scanner(System.in);
+```
+

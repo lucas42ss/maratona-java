@@ -9,5 +9,12 @@ public class LeituraDoTecladoTeste01 {
 
         System.out.println(next);
 
+        char letra = 'A';
+
+        while (letra != 'Z'){
+            letra = entrada.next().charAt(0);
+            System.out.println("Digite outra letra");
+        }
+
     }
 }
