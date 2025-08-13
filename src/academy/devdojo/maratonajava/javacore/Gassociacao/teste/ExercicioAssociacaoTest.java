@@ -16,23 +16,12 @@ public class ExercicioAssociacaoTest {
         SeminarioExercicio seminario1 = new SeminarioExercicio("A verdade sobre todas as plantas", local1);
         SeminarioExercicio seminario2 = new SeminarioExercicio("A verdade sobre todas as pedras", local1);
 
-        seminario1.setAlunos(new AlunoExercicio[]{aluno1, aluno2, aluno3, aluno4}, seminario1);
+        seminario1.setAlunos(new AlunoExercicio[]{aluno1, aluno2, aluno3, aluno4});
 
         professor.setSeminarios(new SeminarioExercicio[]{seminario1});
 
-        System.out.println("iteração antes da mudança seminário aluno 2");
-
         for(AlunoExercicio aluno:seminario1.getAlunos()){
             System.out.println(aluno.getSeminario());
         }
-
-        aluno2.setSeminario(seminario2);
-
-        for(AlunoExercicio aluno:seminario1.getAlunos()){
-            System.out.println(aluno.getSeminario());
-        }
-
-        System.out.println(aluno2.getSeminario());
-
     }
 }

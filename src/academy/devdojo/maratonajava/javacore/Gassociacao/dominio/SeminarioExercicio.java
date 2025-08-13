@@ -23,11 +23,8 @@ public class SeminarioExercicio {
         return this.titulo;
     }
 
-    public void setAlunos(AlunoExercicio[] alunos, SeminarioExercicio seminario) {
+    public void setAlunos(AlunoExercicio[] alunos) {
         this.alunos = alunos;
-        for(AlunoExercicio alun:this.alunos){
-            alun.setSeminario(seminario);
-        }
     }
 
     public AlunoExercicio[] getAlunos() {

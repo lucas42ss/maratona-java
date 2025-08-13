@@ -125,7 +125,7 @@ System.out.println(resultado);
 
 ### 8. Associações
 
-- Relacionamento entre duas classes. Pode ser 1 - 1, 1 - n ou n - n.
+- Relacionamento entre duas classes. Pode ser 1 - 1, 1 - n ou n - n. (has a).
 
 ### 9. Leitura de dados pelo console
 
@@ -133,4 +133,21 @@ System.out.println(resultado);
 ```
   Scanner entrada = new Scanner(System.in);
 ```
+
+### 10. Herança
+
+- Herança (is a). Podemos estender uma classe à outra, implicando na herança dos atributos e métodos, mantendo o relacionamento entre elas. Forte acoplamento.
+- Não se pode extender mais de uma classe diretamente. Não existe herança múltipla.
+```
+Class Funcionario extends Pessoa;
+```
+- Sobrescrita: podemos sobrecrever o método da classe "Mãe", com a mesma assinatura. Utilizamos a palavra super para referenciar o método da classe mais genérica.
+```
+pubic void imprime(){
+super.imprime();
+System.out.println(this.salario);
+}
+```
+- ***Protected***: modificador de acesso. Qualquer subclasse em qualquer pacote terá acesso aos atributos como se estivesse na classe "mãe". Acesso direto à todas as variáveis, independente onde estiverem, porés todas as classes do mesmo pacote também terão acesso.
+- Também pode-se passar o super para herança do construtor.
 
