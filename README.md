@@ -105,7 +105,7 @@ System.out.println(resultado);
 
 ### 4. Sobrecarga de métodos
 
-- Sobrecarga é relacioana ao nome, quantidade ou tipo dos parâmetros que devem ser divergentes na realização da sobrecarga, senão haverá ambiguidade.
+- Sobrecarga é relacionada ao nome, quantidade ou tipo dos parâmetros que devem ser divergentes na realização da sobrecarga, senão haverá ambiguidade.
 
 ### 5. Construtores
 
@@ -122,6 +122,7 @@ System.out.println(resultado);
 - Um campo não estático não pode ser referenciado num campo estático. Estático é criado antes do objeto ser criado.
 - Criar método estático quando métodos não acessam variável da instância.
 - Podemos declarar blocos estáticos e chamar métodos estáticos dentro deles. Eles carregam somente uma vez. Se houver mais de um bloco estático eles serão executados na ordem que foram inseridos.
+- Não é correto acessarmos variáveis static através da variável de referência.
 
 ### 8. Associações
 
@@ -141,13 +142,32 @@ System.out.println(resultado);
 ```
 Class Funcionario extends Pessoa;
 ```
-- Sobrescrita: podemos sobrecrever o método da classe "Mãe", com a mesma assinatura. Utilizamos a palavra super para referenciar o método da classe mais genérica.
+- Sobrescrita: podemos sobrescrever o método da classe "Mãe", com a mesma assinatura. Utilizamos a palavra super para referenciar o método da classe mais genérica.
 ```
 pubic void imprime(){
 super.imprime();
 System.out.println(this.salario);
 }
 ```
-- ***Protected***: modificador de acesso. Qualquer subclasse em qualquer pacote terá acesso aos atributos como se estivesse na classe "mãe". Acesso direto à todas as variáveis, independente onde estiverem, porés todas as classes do mesmo pacote também terão acesso.
+- ***Protected***: modificador de acesso. Qualquer subclasse em qualquer pacote terá acesso aos atributos como se estivesse na classe "mãe". Acesso direto à todas as variáveis, independente onde estiverem, porém, todas as classes do mesmo pacote também terão acesso.
 - Também pode-se passar o super para herança do construtor.
 
+### 11. Sobrescrita - Método toString()
+
+- Para realizar sobrescrita, nome do método e quantidade de parâmetros devem ser os mesmos.
+- Modificador de acesso não pode ser mais restritivo do que definido.
+- Utilizamos @Override para sobrescrever o método toString(). Mudando, por exemplo, sua saída.
+```
+    @Override
+    public String toString(){        return "Nome " + this.nome;}
+```
+
+### 12. Modificador final
+
+- Constantes em Java são definidas pelo modificador final. Devemos informar valor de inicialização. Por convenção, nome da variável deve ser maiúsculo, separados por "_". A utilização do static também é comum para constantes que não vão ter valor alterado.
+```
+private static final String NOME_PROPRIO = new String("Alice");
+```
+- final com variável de referência, significa que a referência (Objeto) não pode ser alterada, mas os atributos e métodos podem.
+- final para classes e métodos está lidando diretamente com herança.
+- final class: evita que a classe seja extendida, final método() também.
