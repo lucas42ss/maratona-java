@@ -79,6 +79,8 @@ System.out.println(resultado);
 
 - Na declaração a base deve ter tamanho definido. 
 
+***Modificadores de acesso: private -> default -> protected -> public***
+
 # Introdução JavaCore
 
 ### 1. Classes - Introdução
@@ -170,7 +172,7 @@ private static final String NOME_PROPRIO = new String("Alice");
 ```
 - final com variável de referência, significa que a referência (Objeto) não pode ser alterada, mas os atributos e métodos podem.
 - final para classes e métodos está lidando diretamente com herança.
-- final class: evita que a classe seja extendida, não permite que método() seja sobrescrito.
+- final class: evita que a classe seja estendida, não permite que método() seja sobrescrito.
 
 ### 13. Enumeração
 
@@ -178,3 +180,22 @@ private static final String NOME_PROPRIO = new String("Alice");
 - Também podemos declarar enumeração numa classe.
 - Posso associar os atributos informados no enum a uma numeração, acessando construtor dentro do enum.
 
+### 14. Classes Abstratas
+
+- Utilizando na classe ela vira um template. Não pode ser instanciada. Classes abstratas podem ter métodos concretos e abstratos. Não pode haver método abstrato em classe concreta.
+- Método não pode ter corpo. Subclasses realizam implementação obrigatória.
+- Se uma classe abstrata estende outra classe abstrata, ela não é obrigada a implementar os métodos abstratos dela.
+- São "contratos".
+
+### 15. Interfaces
+
+- Todos os métodos são public e abstract. Utilizamos implements.
+- Uma classe pode implementar múltiplas interfaces.
+- Pode-se utilizar default para implementação de um método numa interface.
+- Pode-se declarar atributos, todos são public static final.
+- Pode-se incluir métodos static.
+- São "contratos".
+
+### 16. Polimorfismo
+
+- 
