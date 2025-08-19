@@ -170,4 +170,11 @@ private static final String NOME_PROPRIO = new String("Alice");
 ```
 - final com variável de referência, significa que a referência (Objeto) não pode ser alterada, mas os atributos e métodos podem.
 - final para classes e métodos está lidando diretamente com herança.
-- final class: evita que a classe seja extendida, final método() também.
+- final class: evita que a classe seja extendida, não permite que método() seja sobrescrito.
+
+### 13. Enumeração
+
+- Tipo especial de classe onde todos os atributos são constantes.
+- Também podemos declarar enumeração numa classe.
+- Posso associar os atributos informados no enum a uma numeração, acessando construtor dentro do enum.
+

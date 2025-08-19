@@ -13,5 +13,7 @@ public class CarroTeste01 {
         carro.comprador.setNome(comprador1.getNome());
 
         System.out.println(carro.comprador.getNome());
+
+
     }
 }
