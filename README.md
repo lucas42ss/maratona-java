@@ -198,4 +198,7 @@ private static final String NOME_PROPRIO = new String("Alice");
 
 ### 16. Polimorfismo
 
-- 
+- Múltiplas formas. Trocar o tipo da variável de referência, mas continuar utilizando outros objetos.
+- Widening cast: Assinar uma referência de objeto da subclasse para uma variável da superclasse.
+- Narrowing cast: assinar uma referência de objeto da superclasse para uma variável da subclasse.
+- Podemos utilizar a interface como referência de um objeto que implementa um método seu.

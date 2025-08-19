@@ -8,6 +8,6 @@ public class Computador extends Produto {
 
     @Override
     public double valorImposto(){
-        return this.valor*VALOR_IMPOSTO;
+        return this.getValor()*VALOR_IMPOSTO;
     }
 }
