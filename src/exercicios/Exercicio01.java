@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class Exercicio01 {
     public static void main(String[] args) {
-        Scanner next = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Insira 3 números.");
-        int a = next.nextInt();
-        int b = next.nextInt();
-        int c = next.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
 
         System.out.println(a + b);
 
