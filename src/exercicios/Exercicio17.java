@@ -13,8 +13,11 @@ public class Exercicio17 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double f = scanner.nextDouble(), c = scanner.nextDouble();
+        double f = scanner.nextDouble(), c = 0;
 
+        c = 5 * ((f-32)/9);
+
+        System.out.println("Temperatura em Cº: " + c + " Temperatura em ºF: " + f);
 
 
     }
