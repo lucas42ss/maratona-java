@@ -13,14 +13,26 @@ import java.util.Scanner;
 public class Exercicio15 {
     public static void main(String[] args) {
 
+        int[] dataHoje = new int[]{22, 9, 2025};
         Scanner next = new Scanner(System.in);
+        int[] dataAnivesario = new int[3];
 
-        int ano = next.nextInt();
+        int[] idade = new int[3];
 
-        ano = 2025 - ano;
+        for(int i=0; i<3; i++){
+            dataAnivesario[i] = next.nextInt();
+            idade[i] = dataHoje[i] - dataAnivesario[i];
+        }
 
+        if ((idade[0] < 0 && idade[1] < 0) || (idade[0] < 0)){
+            idade[0] += 30;
+            idade[1] += 11;
+        }else if(idade[1]<0){
+            idade[1] += 12;
+            idade[2]--;
+        }
 
-
+        System.out.println(idade[2] + " anos, " + idade[1] + " meses e "+idade[0]+" dias de vida");
 
     }
 }
