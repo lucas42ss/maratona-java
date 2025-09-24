@@ -95,7 +95,7 @@ System.out.println(resultado);
 
 ### 2. Métodos - Introdução
 
-- Servem para executar alguma operação, podem ter retorno ou não(void). Também podemos usar return como um "break-point" para uma função void. 
+- Servem para executar alguma operação, podem ter retorno ou não(void). Podemos usar return como um "break-point" para uma função void. 
 - Quando passamos variáveis do tipo primitivo num método, passamos uma cópia. Quando passamos objeto como argumento, passamos a sua referência na memória.
 - This faz referência ao próprio objeto, todavia, depende do contexto.
 - var args (...): Forma de passar vários elementos de um mesmo tipo para um método, java vai transformar valores num array. VarArgs deve sempre ser o último parâmetro.
@@ -121,7 +121,6 @@ System.out.println(resultado);
 ### 7. Modificador static
 
 - Sempre inserir após modificador de acesso. Atributo pertence à classe, não ao objeto. Todos os objetos compartilham mesmo valor.
-- Um campo não estático não pode ser referenciado num campo estático. Estático é criado antes do objeto ser criado.
 - Criar método estático quando métodos não acessam variável da instância.
 - Podemos declarar blocos estáticos e chamar métodos estáticos dentro deles. Eles carregam somente uma vez. Se houver mais de um bloco estático eles serão executados na ordem que foram inseridos.
 - Não é correto acessarmos variáveis static através da variável de referência.

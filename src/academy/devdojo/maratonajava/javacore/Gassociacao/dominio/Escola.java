@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 
+import java.util.Arrays;
+
 public class Escola {
     private String nome;
     private Professor[] professores;
@@ -31,5 +33,5 @@ public class Escola {
     public void setProfessores(Professor[] professores){
         this.professores = professores;
     }
-
+    
 }

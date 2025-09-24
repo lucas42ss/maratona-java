@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
-public class Endereco {
+public class Endereco{
     private String rua;
     private String cep;
 
@@ -19,4 +19,5 @@ public class Endereco {
     public void setCep(String cep) {
         this.cep = cep;
     }
+    
 }

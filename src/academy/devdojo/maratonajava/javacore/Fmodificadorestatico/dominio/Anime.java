@@ -5,7 +5,7 @@ public class Anime {
     private static int[] episodios = {};
 
     //0 - Bloco de inicialização é executado quando JVM carregar classe
-    //1 - Alocado espaço em memória pro objeto
+    //1 - Alocado espaço em memória para o objeto
     //2 - Cada atributo de classe é criado e inicializado com valores default ou setado.
     //3 - Bloco de inicialização é executado.
     //4 - Construtor é executado.
