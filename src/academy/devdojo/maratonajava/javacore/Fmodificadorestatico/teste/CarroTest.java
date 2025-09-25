@@ -14,6 +14,9 @@ public class CarroTest {
         Carro.setVelocidadeMaxima(350);
 
         carro2.imprime();
+
+        Carro.setVelocidadeMaxima(280);
+
         carro1.imprime();
 
 
