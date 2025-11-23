@@ -1,7 +1,7 @@
 ## Maratona Java | DevDojo
 # Introdução Java
 ### 1. Como funciona o Java?
-- Java é muiltiplataforma e roda numa camada chamada JVM (Java Virtual Machine). É uma linguagem que é compilada, arquivos .JAVA são transformados em arquivos .class (bytecode) que são interpretados pela JVM, comunicando-se com o SO.
+- Java é muiltiplataforma e roda numa camada chamada JVM (Java Virtual Machine). É uma linguagem que é compilada, arquivos .JAVA são transformados em arquivos .class (bytecode) que  são interpretados pela JVM, comunicando-se com o SO.
 ![img.png](img.png)
 - Necessitamos utilizar JDK (Java Development Kit) que é um conjunto de ferramentas para desenvolvimento de softwares em Java.
 - Exemplo de código em Java:
